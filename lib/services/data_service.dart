@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'api_key.dart';
 
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
@@ -11,7 +12,7 @@ class DataService {
     final queryParameters = {
       'q': city,
       'units': 'metric',
-      'appid': 'd8f62ebf5ccd325007e49f6e1bbee776'
+      'appid': API_KEY,
     };
 
     final uri = Uri.https(
